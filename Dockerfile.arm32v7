@@ -10,7 +10,7 @@ COPY --from=builder /qemu-arm-static /usr/bin
 
 MAINTAINER Lukas Plevac
 
-RUN apk --update --no-cache add bash sh nfs-utils && \
+RUN apk --update --no-cache add bash nfs-utils && \
     rm -v /etc/idmapd.conf /etc/exports
 
 
