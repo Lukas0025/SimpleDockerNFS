@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk --update --no-cache add bash sh nfs-utils && \\
+RUN apk --update --no-cache add bash sh nfs-utils && \
     rm -v /etc/idmapd.conf /etc/exports
 
 
